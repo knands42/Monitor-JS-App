@@ -1,0 +1,32 @@
+{
+  "name": "monitor-js-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Learning about OpenTelemetry and Jaeger",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate:up": "knex migrate:up",
+    "migrate:down": "knex migrate:down",
+    "seed:run": "knex seed:run",
+    "start": "node --watch src/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "v20.17.0"
+  },
+  "dependencies": {
+    "@opentelemetry/api": "^1.9.0",
+    "@opentelemetry/instrumentation-http": "^0.53.0",
+    "@opentelemetry/instrumentation-knex": "^0.40.0",
+    "@opentelemetry/sdk-node": "^0.53.0",
+    "dotenv": "^16.4.5",
+    "fastify": "^5.0.0",
+    "knex": "^3.1.0",
+    "pg": "^8.13.0"
+  },
+  "devDependencies": {
+    "sqlite3": "^5.1.7"
+  }
+}
